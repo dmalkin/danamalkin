@@ -2,7 +2,7 @@
   Gulpfile.js
 ------------------------------------------------------------------------------*/
 // Theme information (name, starting theme version)
-var theme        = 'your-theme-name', // will be autocompleted by prelude-init
+var theme        = 'Dana Malkin', // will be autocompleted by prelude-init
     version      = '0.0.1'; // updated with gulp version task
 
 // Set the paths you will be working with
@@ -15,11 +15,13 @@ var phpFiles     = ['./**/*.php', './*.php'],
     imageFiles   = ['./assets/img/*.{jpg,png,gif}'],
     concatFiles  = [
       './node_modules/bowser/bowser.js',
+      './node_modules/nifty-nav/src/js/nifty-nav.js',
+      './node_modules/slick-carousel/slick/slick.js',
       './assets/js/*.js',
       '!./assets/js/theme.min.js',
       '!./assets/js/all.js'
     ],
-    url          = 'wp-dev:8888'; // See https://browsersync.io/docs/options/#option-proxy
+    url          = 'portfolio/'; // See https://browsersync.io/docs/options/#option-proxy
 
 // Include gulp
 var gulp         = require('gulp');
@@ -62,7 +64,11 @@ gulp.task('sass', function() {
       .pipe(plumber())
       .pipe(sass({
         includePaths: [
-          './node_modules/normalize-scss/sass/'
+          './node_modules/normalize-scss/sass/',
+          './node_modules/font-awesome/',
+          './node_modules/nifty-nav/',
+          './node_modules/ginger-grid/',
+          './node_modules/slick-carousel/slick/'
         ]
       })
         .on('error', sass.logError))

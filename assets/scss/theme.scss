@@ -9,12 +9,21 @@
 -----------------------------------------------------------------------------*/
 // import the Sass partials in the order that you need here
 
+// Variables
+@import 'settings/variables';
+
+@import 'settings/nifty-settings';
+@import 'nifty-nav';
+
+@import 'settings/ginger-settings';
+@import 'ginger';
+
+@import 'settings/slick-theme';
+@import 'slick.scss';
+
 // vendor
 @import 'normalize';
 @include normalize();
-
-// Variables
-@import 'settings/variables';
 
 // Mixins
 @import 'mixins/sugar';
@@ -28,6 +37,11 @@
 @import 'components/social-menu';
 @import 'components/header';
 @import 'components/footer';
+
+// Packages
+@import 'scss/font-awesome';
+
+// Templates
 
 // Plugin Overrides
 @import 'plugins/overrides';

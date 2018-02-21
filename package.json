@@ -9,6 +9,9 @@
   "author": "Dana Malkin",
   "license": "GPL-3.0",
   "dependencies": {
+    "font-awesome": "^4.7.0",
+    "ginger-grid": "^2.1.1",
+    "nifty-nav": "^3.0.0",
     "prelude-wp": "^4.0.3"
   }
 }
