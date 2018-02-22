@@ -1,3 +1,46 @@
 /*------------------------------------------------------------------------------
   Header
 ------------------------------------------------------------------------------*/
+header {
+  padding-top: rem(15);
+}
+
+.primary-nav {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding-left: rem(30);
+
+      a {
+        margin: 0;
+        font: $light rem(26)/rem(30) $eaves;
+        color: $white;
+
+        &:after {
+            display:block;
+            content: '';
+            border-bottom: solid 3px $primary;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+          }
+
+          &:hover:after {
+            transform: scaleX(1);
+          }
+      }
+    }
+  }
+
+  .current-menu-item {
+    a:after {
+        display:block;
+        content: '';
+        border-bottom: solid 3px $primary;
+        transform: scaleX(1) !important;
+    }
+  }
+}

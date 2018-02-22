@@ -23,5 +23,6 @@ function prelude_theme_scripts() {
 
   // JS
   wp_enqueue_script('prelude-js', get_template_directory_uri() . '/assets/js/theme.min.js', array('jquery'), THEME_VERSION, true );
+  wp_enqueue_script( 'typekit', '//use.typekit.net/goo3vtx.js', array(), '1.0.0' );
 }
 add_action( 'wp_enqueue_scripts', 'prelude_theme_scripts' );

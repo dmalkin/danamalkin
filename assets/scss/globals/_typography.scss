@@ -1,8 +1,61 @@
 /*------------------------------------------------------------------------------
   Typography
 ------------------------------------------------------------------------------*/
+// Headers
+h1 {
+  margin: 0;
+  font: $light rem(120)/rem(140) $eaves;
+  color: $white;
+}
+
+h2 {
+  margin: 0;
+  font: $light rem(52)/rem(52) $style;
+  color: $white;
+}
+
+h3 {
+  margin: 0;
+  font: $light rem(46)/rem(46) $eaves;
+  color: $white;
+}
+
+h4 {
+  margin: 0;
+  font: $light rem(35)/rem(40) $eaves;
+  color: $white;
+}
+
+h5 {
+  margin: 0;
+  font: $light rem(30)/rem(30) $eaves;
+  text-transform: uppercase;
+  color: $white;
+}
+
+h6 {
+  margin: 0;
+  font: $light rem(20)/rem(25) $eaves;
+  color: $white;
+}
+
+// Body Copy
+p, ul, ol, li {
+  margin: 0 0 rem(15);
+  font: $light rem(20)/rem(25) $eaves;
+  letter-spacing: rem(0.5);
+  color: $white;
+}
 
 // Links
 a {
+  font-family: $eaves;
+  color: $white;
   text-decoration: none;
+  transition: all .25s ease;
+
+  &:hover {
+    color: $primary;
+    cursor: pointer;
+  }
 }

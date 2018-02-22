@@ -11,20 +11,25 @@
     li{
       display: inline-block;
       position: relative;
-      padding: 0 .625rem;
       a{
         display: inline-block;
         text-align: center;
+        padding: 0 .625rem;
         &:before{
           padding-bottom: .25rem;
           display: inline-block;
           vertical-align: middle;
           font-family: 'FontAwesome';
-          font-size: .7rem;
-          color: red;
+          font-size: 1.4rem;
+          color: $white;
+          opacity: 0.5;
+          transition: all 0.3s ease;
         }
         &:hover {
           font-style: normal;
+          &:before {
+            opacity: 1;
+          }
         }
       } // end anchor
       // Adding the icons

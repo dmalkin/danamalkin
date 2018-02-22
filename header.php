@@ -25,12 +25,26 @@
   <?php if ( is_singular() && comments_open() ) wp_enqueue_script( 'comment-reply' ); ?>
 
   <?php wp_head(); ?>
+
+    <link rel="stylesheet" href="https://use.typekit.net/goo3vtx.css">
 </head>
 
 <body <?php body_class(); ?>>
 
   <?php // Header ?>
-  <header>
+  <header class="container">
+    <div class="row">
+      <div class="col-4">
+        <h5 class="header-logo">
+          <a href="<?php echo get_home_url(); ?>">Dana Malkin</a>
+        </h5>
+      </div>
+      <div class="col-8">
+        <?php // Primary Menu
+          wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') );
+        ?>
+      </div>
+    </div>
 
   </header>
 

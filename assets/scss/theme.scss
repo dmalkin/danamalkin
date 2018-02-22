@@ -12,11 +12,11 @@
 // Variables
 @import 'settings/variables';
 
-@import 'settings/nifty-settings';
-@import 'nifty-nav';
-
 @import 'settings/ginger-settings';
 @import 'ginger';
+
+@import 'settings/nifty-settings';
+@import 'nifty-nav';
 
 @import 'settings/slick-theme';
 @import 'slick.scss';
@@ -41,7 +41,11 @@
 // Packages
 @import 'scss/font-awesome';
 
-// Templates
+// Pages
+@import 'pages/home';
+@import 'pages/work';
+@import 'pages/about';
+@import 'pages/contact';
 
 // Plugin Overrides
 @import 'plugins/overrides';
