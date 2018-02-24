@@ -25,6 +25,7 @@
             <a class="image-wrap" id="<?php echo $id; ?>" href="<?php the_permalink(); ?>">
               <div class="featured-image" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>) center center/cover no-repeat"></div>
               <img class="red-icon" id="icon4" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
+              <div class="white-lines"></div>
             </a>
           <?php endwhile; ?>
         </div>

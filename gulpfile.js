@@ -89,14 +89,14 @@ gulp.task('sass', function() {
     }));
 });
 
-// Lint JavaScript
-gulp.task('lint', function() {
-  return gulp.src( jsFiles )
-  .pipe(plumber())
-  .pipe(eslint())
-  .pipe(eslint.format())
-  .pipe(eslint.failAfterError());
-});
+// // Lint JavaScript
+// gulp.task('lint', function() {
+//   return gulp.src( jsFiles )
+//   .pipe(plumber())
+//   .pipe(eslint())
+//   .pipe(eslint.format())
+//   .pipe(eslint.failAfterError());
+// });
 
 /*------------------------------------------------------------------------------
   Production Tasks
@@ -123,7 +123,7 @@ gulp.task('minify-css', ['sass'], function() {
 });
 
 // Concatenate & Minify JavaScript
-gulp.task('scripts', ['lint'], function() {
+gulp.task('scripts', function() {
   return gulp.src( concatFiles )
     .pipe(concat( 'all.js' ))
     .pipe(gulp.dest( './assets/js/' ))

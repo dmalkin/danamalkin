@@ -8,6 +8,24 @@
 
   .image-wrap {
     display:none;
+
+    &:hover {
+      .white-lines {
+        opacity: 0.9;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .white-lines {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 20px solid $white;
+    opacity: 0;
+    transition: all 0.7s ease;
   }
 
   .slide {
@@ -17,7 +35,7 @@
   .featured-image {
     min-height: 50vh;
     width: 100%;
-    z-index: -1;
+    
   }
 
   ol {
@@ -37,7 +55,7 @@
       width: 70vw;
       opacity: 1;
       font-size: rem(46);
-      transition: all 0.3s ease;
+      transition: all 0.5s ease;
     }
   }
 
