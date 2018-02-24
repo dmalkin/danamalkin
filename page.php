@@ -11,7 +11,7 @@
 
       <section class="container">
         <div class="row row--justify-content-center home-page">
-          <div class="col-centered home-bg" data-tilt data-tilt-max="9" data-tilt-reset="false">
+          <div class="col-centered home-bg" data-tilt data-tilt-reset="false">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg.svg" alt="Design & Develop" />
           </div>
           <div class="col-7 col-centered">

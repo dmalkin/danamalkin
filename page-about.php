@@ -1,28 +1,33 @@
 <?php
   /**
-   * The default page template.
+   * The about page template.
    *
    * Used when a default template individual page is queried.
    */
   get_header();
 ?>
 
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+    // Variables
+    $img = get_the_post_thumbnail('bio');
+
+    ?>
 
       <section class="container">
-        <div class="row row--justify-content-center home-page">
+        <div class="row row--justify-content-center about-page">
           <div class="col-4">
-            <img
+            <?php the_post_thumbnail('bio'); ?>
+            <img class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
           </div>
           <div class="col-6 offset-1">
             <?php the_content(); ?>
           </div>
 
-          <img class="red-icon" id="icon1" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
-          <img class="red-icon" id="icon2" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
-          <img class="red-icon" id="icon3" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
-          <img class="red-icon" id="icon4" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
-          <img class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
+          <img class="red-icon" id="icon1" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" />
+          <img class="red-icon" id="icon2" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" />
+          <img class="red-icon" id="icon3" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" />
+          <img class="red-icon" id="icon4" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" />
+
         </div>
       </section>
 
