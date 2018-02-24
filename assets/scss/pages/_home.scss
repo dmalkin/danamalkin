@@ -4,6 +4,7 @@
 .home-page {
   height: calc(100vh - 122px);
   align-items: center;
+  transform-style: preserve-3d;
 
   #icon1 {
     opacity: 1;
@@ -34,6 +35,6 @@
 
 .home-bg {
   position: absolute;
-  width: 70%;
-  opacity: 0.01;
+  width: 100%;
+  padding:0 25%;
 }

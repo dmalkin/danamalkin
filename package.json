@@ -13,6 +13,7 @@
     "ginger-grid": "^2.1.1",
     "nifty-nav": "^3.0.0",
     "prelude-wp": "^4.0.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tilt.js": "^1.2.1"
   }
 }

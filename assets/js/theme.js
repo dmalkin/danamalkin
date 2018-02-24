@@ -16,4 +16,18 @@ jQuery( document ).ready(function( $ ) {
     $('body').addClass('safari');
   }
 
+	// Work (Posts) Page
+	$('.post-title:first-of-type').addClass('active');
+	$('.image-wrap:first-of-type').addClass('slide');
+
+	$('.post-title').click(function() {
+		$('.post-title').removeClass('active');
+		$('.image-wrap').removeClass('slide');
+		$(this).addClass('active');
+
+		var id = $(this).attr('id')
+
+		$('.image-wrap[id='+id+']').addClass('slide');
+	})
+
 });

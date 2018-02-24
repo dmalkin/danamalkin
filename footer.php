@@ -15,5 +15,6 @@
 </footer>
 
 <?php wp_footer(); ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.0/tilt.jquery.min.js"></script>
 </body>
 </html>

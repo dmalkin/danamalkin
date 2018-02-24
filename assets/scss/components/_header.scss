@@ -21,16 +21,16 @@ header {
         color: $white;
 
         &:after {
-            display:block;
-            content: '';
-            border-bottom: solid 3px $primary;
-            transform: scaleX(0);
-            transition: transform 250ms ease-in-out;
-          }
+          display:block;
+          content: '';
+          border-bottom: solid 3px $primary;
+          transform: scaleX(0);
+          transition: transform 250ms ease-in-out;
+        }
 
-          &:hover:after {
-            transform: scaleX(1);
-          }
+        &:hover:after {
+          transform: scaleX(1);
+        }
       }
     }
   }
