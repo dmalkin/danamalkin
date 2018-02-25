@@ -9,18 +9,25 @@
   }
 
   &__hero-image {
-    position: relative;
-    min-height: 50vh;
+    min-height: 63vh;
     width: 100%;
   }
 
+  &__hero-text {
+    position: absolute;
+
+    p {
+      font-size: rem(26);
+    }
+  }
+
   #icon1 {
-    opacity: 1;
-    bottom: 15vh;
-    left: 10vw;
+    opacity: 0.6;
+    bottom: 40vh;
+    left: 4vw;
   }
   #icon2 {
-    opacity: 0.5;
+    opacity: 0.4;
     bottom: 70vh;
     left: 25vw;
   }
@@ -30,10 +37,21 @@
     left: 70vw;
   }
   #icon4 {
-    max-width: rem(200);
+    opacity: 1;
+    bottom: -6vh;
+    left: 65vw;
+  }
+  #icon5 {
+    max-width: rem(400);
     opacity: 1;
     bottom: rem(-70);
     left: rem(-55);
     z-index: -2;
+  }
+
+  &__info {
+    margin: rem(75) 0;
+    padding: rem(25) 0 0;
+    background-color: rgba(0,0,0,0.1);
   }
 }

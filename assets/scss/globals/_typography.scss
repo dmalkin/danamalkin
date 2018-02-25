@@ -22,15 +22,17 @@ h3 {
 
 h4 {
   margin: 0;
+  margin-bottom: rem(25);
   font: $light rem(35)/rem(40) $eaves;
   color: $white;
 }
 
 h5 {
   margin: 0;
-  font: $light rem(30)/rem(30) $eaves;
+  font: $light rem(14)/rem(16) $eaves;
   text-transform: uppercase;
   color: $white;
+  opacity: 0.6;
 }
 
 h6 {
