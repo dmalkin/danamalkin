@@ -6,16 +6,20 @@
    */
   get_header();
 
-  if( have_posts() ):
+  if( have_posts() ): while( have_posts() ): the_post(); ?>
 
-    while( have_posts() ): the_post();
+    <section class="single-page">
 
-    get_template_part('parts/single/hero');
-    get_template_part('parts/single/info');
-    get_template_part('parts/single/image-capture');
+      <?php
 
-    endwhile;
+        get_template_part('parts/single/hero');
+        get_template_part('parts/single/info');
+        get_template_part('parts/single/image-capture');
 
-  endif;
+      ?>
+
+    </section>
+
+  <?php endwhile; endif;
 
   get_footer();

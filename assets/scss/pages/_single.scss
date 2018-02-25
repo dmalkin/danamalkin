@@ -3,6 +3,17 @@
 ----------------------------------------------------------------------------*/
 .single-page {
 
+  &__hero {
+    height: calc(100vh - 122px);
+    align-items: center;
+  }
+
+  &__hero-image {
+    position: relative;
+    min-height: 50vh;
+    width: 100%;
+  }
+
   #icon1 {
     opacity: 1;
     bottom: 15vh;

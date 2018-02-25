@@ -37,6 +37,9 @@ header {
   }
 
   .current-menu-item {
+    position: relative;
+    top: -3px;
+    
     a {
       &:before {
         content: '';
