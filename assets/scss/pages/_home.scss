@@ -4,7 +4,7 @@
 .home-page {
   height: calc(100vh - 122px);
   align-items: center;
-  transform-style: preserve-3d;
+  overflow: hidden;
 
   #icon1 {
     opacity: 1;
@@ -28,7 +28,7 @@
   }
   #icon5 {
     opacity: 0.2;
-    bottom: 82vh;
+    bottom: 80vh;
     left: 90vw;
   }
 }
@@ -36,5 +36,5 @@
 .home-bg {
   position: absolute;
   width: 100%;
-  padding:0 25%;
+  padding:25% 25%;
 }

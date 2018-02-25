@@ -34,12 +34,13 @@
         <div class="row">
           <?php while ( $nav_query->have_posts() ) : $nav_query->the_post(); ?>
             <div class="col-6 sm-col-12">
-              <a href="<?php echo get_permalink(); ?>">
+              <a class="image-wrap" href="<?php echo get_permalink(); ?>">
                 <div class="more-posts__image" style="background:url(<?php featuredURL(); ?>) center center/cover;">
                   <h3 class="more-posts__title text-center">
                     <?php the_title(); ?>
                   </h3>
                 </div>
+                <div class="white-lines"></div>
               </a>
             </div>
           <?php endwhile; ?>

@@ -55,10 +55,12 @@
       width: 70vw;
       opacity: 1;
       font-size: rem(46);
-      transition: all 0.5s ease;
+      transition: font-size 0.5s ease;
 
       &:before {
-
+        position: relative;
+        top: 2px;
+        content:url('../../assets/img/icon-sm.png');
       }
     }
   }

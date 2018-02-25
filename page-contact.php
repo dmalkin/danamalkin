@@ -13,7 +13,7 @@
         <div class="row row--justify-content-center contact-page">
           <div class="col-4 sm-col-9 col-centered">
             <?php the_content(); ?>
-            <img class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
+            <img data-tilt class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
           </div>
 
           <img class="red-icon" id="icon1" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" />

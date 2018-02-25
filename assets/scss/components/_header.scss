@@ -3,9 +3,21 @@
 ------------------------------------------------------------------------------*/
 header {
   padding-top: rem(15);
+  z-index: 99999;
+
+  h3 {
+    text-transform: uppercase;
+    font: $light rem(30)/rem(30) $eaves;
+
+    a:hover {
+      color: $white;
+      content: "Home";
+    }
+  }
 }
 
 .primary-nav {
+
   ul {
     display: flex;
     justify-content: flex-end;
@@ -39,7 +51,7 @@ header {
   .current-menu-item {
     position: relative;
     top: -3px;
-    
+
     a {
       &:before {
         content: '';

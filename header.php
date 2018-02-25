@@ -35,9 +35,9 @@
   <header class="container">
     <div class="row">
       <div class="col-4">
-        <h5 class="header-logo">
+        <h3 class="header-logo">
           <a href="<?php echo get_home_url(); ?>">Dana Malkin</a>
-        </h5>
+        </h3>
       </div>
       <div class="col-8">
         <?php // Primary Menu
