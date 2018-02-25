@@ -17,7 +17,7 @@
   <div class="row single-page__hero">
     <div class="col-7 md-col-10 offset-4">
       <div class="single-page__hero-image" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>) center center/cover no-repeat"></div>
-      <img class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-text.svg" />
+      <img class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
     </div>
 
     <div class="col-10 sm-col-10 offset-1 col-centered single-page__hero-text">

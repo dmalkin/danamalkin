@@ -30,4 +30,23 @@ jQuery( document ).ready(function( $ ) {
 		$('.image-wrap[id='+id+']').addClass('slide');
 	})
 
+	// Slick Slider
+  // iPhone
+  $('.iphone-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+		fade: true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
+  });
+
 });

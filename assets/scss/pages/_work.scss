@@ -58,7 +58,7 @@
       transition: all 0.5s ease;
 
       &:before {
-        
+
       }
     }
   }
@@ -79,10 +79,10 @@
     left: 70vw;
   }
   #icon4 {
-    max-width: rem(200);
+    max-width: rem(300);
     opacity: 1;
-    bottom: rem(-70);
-    left: rem(-55);
+    bottom: rem(-100);
+    left: rem(-80);
     z-index: -2;
   }
 }

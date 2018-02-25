@@ -14,7 +14,9 @@
 
         get_template_part('parts/single/hero');
         get_template_part('parts/single/info');
-        get_template_part('parts/single/image-capture');
+        get_template_part('parts/single/showcase');
+        get_template_part('parts/single/features');
+        get_template_part('parts/single/more-posts');
 
       ?>
 
