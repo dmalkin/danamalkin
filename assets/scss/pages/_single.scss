@@ -123,15 +123,28 @@
     min-height: rem(300);
   }
 
+  .text-hover {
+    display: none;
+    margin: auto;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
   .image-wrap {
 
     &:hover {
-      h3 {
-        opacity: 0;
+      .more-posts__title {
+        display: none;
       }
 
       .white-lines {
         opacity: 0.9;
+        transform: scale(1.1);
+      }
+
+      .text-hover {
+        display: block;
+        opacity: 1;
         transform: scale(1.1);
       }
     }
@@ -150,6 +163,7 @@
 
   &__title {
     margin: auto;
+    padding: 0 rem(20);
     transition: all 0.5s ease;
   }
 

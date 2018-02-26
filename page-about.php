@@ -13,7 +13,7 @@
 
     ?>
 
-      <section class="container">
+      <section class="container animsition" data-animsition-in-class="fade-in-right-lg" data-animsition-in-duration="600" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="400">
         <div class="row row--justify-content-center about-page">
           <div class="col-4">
             <?php the_post_thumbnail('bio'); ?>

@@ -9,7 +9,7 @@
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-      <section class="container">
+      <section class="container animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="600" data-animsition-out-class="fade-out" data-animsition-out-duration="400">
         <div class="row row--justify-content-center home-page">
           <div class="col-centered home-bg" data-tilt data-tilt-reset="false">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg.svg" alt="Design & Develop" />

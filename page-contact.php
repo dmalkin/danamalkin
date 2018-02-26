@@ -9,7 +9,7 @@
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-      <section class="container">
+      <section class="container animsition" data-animsition-in-class="fade-in-right-lg" data-animsition-in-duration="600" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="400">
         <div class="row row--justify-content-center contact-page">
           <div class="col-4 sm-col-9 col-centered">
             <?php the_content(); ?>

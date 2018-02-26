@@ -34,11 +34,12 @@
         <div class="row">
           <?php while ( $nav_query->have_posts() ) : $nav_query->the_post(); ?>
             <div class="col-6 sm-col-12">
-              <a class="image-wrap" href="<?php echo get_permalink(); ?>">
+              <a class="image-wrap animsition-link" href="<?php echo get_permalink(); ?>" data-animsition-out-class="fade-out-up" data-animsition-out-duration="400">
                 <div class="more-posts__image" style="background:url(<?php featuredURL(); ?>) center center/cover;">
                   <h3 class="more-posts__title text-center">
                     <?php the_title(); ?>
                   </h3>
+                  <h3 class="text-hover text-center">View Project</h3>
                 </div>
                 <div class="white-lines"></div>
               </a>
