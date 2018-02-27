@@ -3,6 +3,8 @@
 ----------------------------------------------------------------------------*/
 .single-page {
 
+  // Hero
+
   &__hero {
     height: calc(100vh - 122px);
     align-items: center;
@@ -59,6 +61,8 @@
     margin: rem(50) 0 rem(150);
   }
 
+  // Showcase
+
   .showcase {
     position: relative;
   }
@@ -113,7 +117,50 @@
     height: 75%;
     overflow: hidden;
   }
+
+  // Features
+
+  &__features {
+
+    .features-title {
+      margin-bottom: rem(40);
+      text-transform: uppercase;
+    }
+
+    .feature-number {
+      background-color: rgba(191,15,15,0.5);
+      padding: 0 0.8rem;
+    }
+
+    .icon-wrap {
+      padding: 0 0.8rem;
+    }
+
+    .fa {
+      padding: rem(65) 0;
+      color: $white;
+      font-size: rem(100);
+    }
+
+    .feature-title {
+      padding: 0 3rem 0 0.8rem;
+      font-size: rem(48);
+      margin-bottom: rem(15);
+    }
+
+    .feature-description {
+      padding: 0 3rem 0 0.8rem;
+    }
+
+    #icon8 {
+      opacity: 0.7;
+      top:-25vh;
+      left: 15vw;
+    }
+  }
 }
+
+// More posts
 
 .more-posts {
   margin: rem(50) 0 rem(150);
