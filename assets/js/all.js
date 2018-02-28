@@ -3794,8 +3794,9 @@ jQuery( document ).ready(function( $ ) {
 	// AOS animations
 	AOS.init({
       duration: 600,
-      easing: 'ease-in-sine',
-      delay: 600,
+			data-aos-offset="-100",
+      easing: 'ease-in-out-quart',
+      delay: 200,
 			disable: 'mobile',
 			once: 'true',
     });

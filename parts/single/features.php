@@ -29,7 +29,7 @@
           $description = get_sub_field('description');
 
         ?>
-          <div data-aos="fade-up" class="col stretch text-center">
+          <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="600" class="col stretch text-center">
             <div class="feature-col">
               <h2 class="feature-number">
                 <?php echo $number; ?>

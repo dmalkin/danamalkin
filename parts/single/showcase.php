@@ -19,7 +19,7 @@
   <section class="container">
     <div class="row single-page__image">
       <div class="col-8">
-        <figure class="showcase" data-aos="fade-right">
+        <figure class="showcase" data-aos="fade-right" data-aos-delay="0">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/laptop.svg" />
           <div class="screenshot">
             <div class="screenshot__wrap">
@@ -29,7 +29,7 @@
         </figure>
       </div>
       <div class="col-3">
-        <figure class="showcase" data-aos="fade-left">
+        <figure class="showcase" data-aos="fade-left" data-aos-delay="0">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/iPhone.svg" />
           <div class="iphone-slider">
             <?php if( $phone_images ): ?>
