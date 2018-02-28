@@ -42,6 +42,20 @@ jQuery( document ).ready(function( $ ) {
     transition: function(url){ window.location.href = url; }
   });
 
+	// AOS animations
+	AOS.init({
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 600,
+			disable: 'mobile',
+			once: 'true',
+    });
+
+	function explode(){
+	  $('.work-page > div > ol > li').removeAttr('data-aos');
+	}
+	setTimeout(explode, 1300);
+
 	// Work (Posts) Page
 	$('.post-title:first-of-type').addClass('active');
 	$('.image-wrap:first-of-type').addClass('slide');

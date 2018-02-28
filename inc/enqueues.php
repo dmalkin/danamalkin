@@ -20,6 +20,7 @@ if (!(is_admin() )) {
 function prelude_theme_scripts() {
   // CSS
   wp_enqueue_style('prelude-css', get_template_directory_uri() . '/assets/css/theme.min.css', array(), THEME_VERSION );
+  wp_enqueue_style('aos-css', get_template_directory_uri() . '/assets/css/aos.min.css', array(), THEME_VERSION );
   wp_enqueue_style('animsition-css', get_template_directory_uri() . '/assets/css/animsition.min.css', array(), THEME_VERSION );
 
   // JS

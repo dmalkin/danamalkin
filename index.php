@@ -6,14 +6,16 @@
 
   if ( have_posts() ) : ?>
 
-    <section class="container animsition" data-animsition-in-class="fade-in-right-lg" data-animsition-in-duration="600" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="400">
+    <section class="container animsition" data-animsition-in-class="fade-in-right-lg" data-animsition-in-duration="400" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="400">
       <div class="row row--justify-content-center work-page">
         <div class="col-4">
           <ol>
+          <?php $num = 400; ?>
           <?php while ( have_posts() ) : the_post(); ?>
-            <li class="post-title" id="<?php echo get_the_ID(); ?>">
+            <li class="post-title" id="<?php echo get_the_ID(); ?>" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="<?php echo $num; ?>">
               <?php the_title(); ?>
             </li>
+            <?php $num = $num + 200; ?>
           <?php endwhile; ?>
           </ol>
         </div>
@@ -23,7 +25,7 @@
             $id = get_the_ID();
           ?>
             <a class="image-wrap animsition-link" id="<?php echo $id; ?>" href="<?php the_permalink(); ?>" data-animsition-out-class="fade-out-up" data-animsition-out-duration="400">
-              <div class="featured-image" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>) center center/cover no-repeat">
+              <div data-aos="zoom-in-right" class="featured-image" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>) center center/cover no-repeat">
                 <h3 class="text-hover text-center">View Project</h3>
               </div>
               <img class="red-icon" id="icon4" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />

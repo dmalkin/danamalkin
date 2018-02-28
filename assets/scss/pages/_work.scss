@@ -53,16 +53,16 @@
       content: '';
     	position: absolute;
     	top: 0;
-    	right: 0.8rem;
+    	right: 0;
     	bottom: 0;
-    	left: 0.8rem;
+    	left: 0;
     	background-image: linear-gradient(to top right,$dark,$primary);
     	opacity: .5;
     }
   }
 
   ol {
-    list-style: none;
+    list-style: decimal-leading-zero;
 
     li {
       padding: rem(10);
@@ -79,12 +79,6 @@
       opacity: 1;
       font-size: rem(46);
       transition: font-size 0.5s ease;
-
-      &:before {
-        position: relative;
-        top: 2px;
-        content:url('../../assets/img/icon-sm.png');
-      }
     }
   }
 
