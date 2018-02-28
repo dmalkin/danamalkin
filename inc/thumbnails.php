@@ -16,4 +16,5 @@ function featuredURL($size = 'full'){
 if( function_exists('prelude_features') ){
   // Use add_image_size below to add additional thumbnail sizes
   add_image_size('bio', '600', '800', 'true');
+  add_image_size('feature', '600', '600', 'true');
 }

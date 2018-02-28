@@ -48,6 +48,17 @@
     min-height: 50vh;
     width: 100%;
     z-index: -1;
+
+    &:before {
+      content: '';
+    	position: absolute;
+    	top: 0;
+    	right: 0.8rem;
+    	bottom: 0;
+    	left: 0.8rem;
+    	background-image: linear-gradient(to top right,$dark,$primary);
+    	opacity: .5;
+    }
   }
 
   ol {

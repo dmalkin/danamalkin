@@ -20,12 +20,12 @@
       <img class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
     </div>
 
-    <div class="col-10 sm-col-10 offset-1 col-centered single-page__hero-text">
+    <div class="col-8 sm-col-10 offset-1 col-centered single-page__hero-text">
       <h1>
         <?php the_title(); ?>
       </h1>
       <div class="row">
-        <div class="col-10">
+        <div class="col-8">
           <p>
             <?php the_content(); ?>
           </p>
