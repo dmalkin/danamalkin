@@ -16,8 +16,15 @@
 <section class="container">
   <div class="row single-page__hero">
     <div class="col-7 md-col-10 offset-4">
-      <div class="single-page__hero-image" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>) center center/cover no-repeat" data-aos="zoom-in-right"></div>
+      <div class="single-page__hero-image" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>) center center/cover no-repeat" data-aos="fade-down" data-aos-delay="400"></div>
       <img class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
+      <h2 class="single-page__hero-see-more text-center" data-aos="fade-in" data-aos-delay="2500" data-aos-duration="1000">
+        See More <span class="white-circle">
+          <a href="#more-content" class="anchor-scroll">
+            <i class="fa fa-chevron-down" id="chev1"></i><i class="fa fa-chevron-down" id="chev2"></i>
+          </a>
+        </span="white-circle">
+      </h2>
     </div>
 
     <div class="col-8 sm-col-10 offset-1 col-centered single-page__hero-text">

@@ -3765,6 +3765,24 @@ jQuery( document ).ready(function( $ ) {
     $('body').addClass('safari');
   }
 
+	// Nifty Nav
+  $('#nifty-nav-toggle').niftyNav();
+
+	// Smooth Anchor Link Scrolling
+	$('.anchor-scroll').on('click', function(e) {
+		e.preventDefault();
+
+		// Store hash
+    var hash = this.hash;
+
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top,
+    }, 1000, function(){
+
+      window.location.hash = hash;
+    });
+	});
+
 	// Page Transitions
 	$('#menu-primary > li > a').addClass('animsition-link');
 
@@ -3794,7 +3812,7 @@ jQuery( document ).ready(function( $ ) {
 	// AOS animations
 	AOS.init({
       duration: 600,
-			data-aos-offset="-100",
+			offset: -100,
       easing: 'ease-in-out-quart',
       delay: 200,
 			disable: 'mobile',
@@ -3820,15 +3838,21 @@ jQuery( document ).ready(function( $ ) {
 		$('.image-wrap[id='+id+']').addClass('slide');
 	})
 
+	// Big laptop
+	$('.big-laptop').click(function(){
+		$('.laptop').css({'transform':'scale(1.5)','left':'10%'});
+	})
+
 	// Slick Slider
   // iPhone
   $('.iphone-slider').slick({
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     adaptiveHeight: true,
 		fade: true,
-    dots: false,
+    dots: true,
+		arrows: false,
     responsive: [
       {
         breakpoint: 767,

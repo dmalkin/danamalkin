@@ -18,8 +18,15 @@
 <?php if($image) : ?>
   <section class="container">
     <div class="row single-page__image">
-      <div class="col-8">
-        <figure class="showcase" data-aos="fade-right" data-aos-delay="0">
+      <div class="col-8 sm-col-12">
+        <h2 class="single-page__hero-see-more text-center" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000">
+          Scroll on Laptop <span class="white-circle sm-hide">
+            <a class="big-laptop">
+              <i class="fa fa-chevron-down" id="chev1"></i><i class="fa fa-chevron-down" id="chev2"></i>
+            </a>
+          </span="white-circle">
+        </h2>
+        <figure class="showcase laptop" data-aos="fade-right" data-aos-delay="0">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/laptop.svg" />
           <div class="screenshot">
             <div class="screenshot__wrap">
@@ -28,8 +35,8 @@
           </div>
         </figure>
       </div>
-      <div class="col-3">
-        <figure class="showcase" data-aos="fade-left" data-aos-delay="0">
+      <div class="col-3 sm-col-8 sm-col-centered">
+        <figure class="showcase iphone" data-aos="fade-left" data-aos-delay="0">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/iPhone.svg" />
           <div class="iphone-slider">
             <?php if( $phone_images ): ?>

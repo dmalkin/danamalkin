@@ -24,15 +24,13 @@
             // Variables
             $id = get_the_ID();
           ?>
-            <div class="image-wrap">
-              <div class="featured-image" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>) center center/cover no-repeat" data-aos="zoom-in-right">
-                <a class="image-wrap animsition-link" id="<?php echo $id; ?>" href="<?php the_permalink(); ?>" data-animsition-out-class="fade-out-up" data-animsition-out-duration="400">
-                  <h3 class="text-hover text-center">View Project</h3>
-                </a>
+            <a class="image-wrap animsition-link" id="<?php echo $id; ?>" href="<?php the_permalink(); ?>" data-animsition-out-class="fade-out-up" data-animsition-out-duration="400">
+              <div class="featured-image" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>) center center/cover no-repeat" data-aos="zoom-in-right" data-aos-delay="500">
+              <h3 class="text-hover text-center">View Project</h3>
               </div>
               <img class="red-icon" id="icon4" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" />
               <div class="white-lines"></div>
-            </div>
+            </a>
           <?php endwhile; ?>
         </div>
 

@@ -34,19 +34,31 @@
   <?php // Header ?>
   <header class="container">
     <div class="row">
-      <div class="col-4">
+      <div class="col-4 md-col-4 sm-col-10">
         <h3 class="header-logo">
           <a href="<?php echo get_home_url(); ?>">Dana Malkin</a>
         </h3>
       </div>
-      <div class="col-8">
+      <div class="col-8 md-col-8 sm-hide">
         <?php // Primary Menu
           wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') );
         ?>
       </div>
-    </div>
 
+      <?php // Small Navigation ?>
+      <div class="sm-col-2 sm-only">
+        <a href="#" id="nifty-nav-toggle"><span></span></a>
+      </div>
+    </div>
   </header>
+
+  <div class="nifty-panel">
+    <div class="container">
+      <div class="row">
+        <?php wp_nav_menu(array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'mobile-nav')); ?>
+      </div>
+    </div>
+  </div>
 
   <?php // Main Content ?>
   <main>

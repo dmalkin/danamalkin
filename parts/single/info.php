@@ -17,7 +17,7 @@
 ?>
 
 <section class="container">
-  <div class="row single-page__info">
+  <div class="row single-page__info" id="more-content">
     <div class="col-5 offset-1 stretch">
       <?php if($services) : ?>
         <h5>Services</h5>
