@@ -57,7 +57,7 @@
         <?php endwhile; ?>
       </div>
 
-      <img class="red-icon" id="icon8" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" />
+      <img class="red-icon" id="icon8" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" data-aos="fade-down" data-aos-duration="1600"/>
 
     </div>
 

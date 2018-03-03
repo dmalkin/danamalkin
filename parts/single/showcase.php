@@ -16,12 +16,12 @@
 ?>
 
 <?php if($image) : ?>
-  <section class="container">
+  <section class="container" id="laptop">
     <div class="row single-page__image">
       <div class="col-8 sm-col-12">
         <h2 class="single-page__hero-see-more text-center" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000">
           Scroll on Laptop <span class="white-circle sm-hide">
-            <a class="big-laptop">
+            <a href="#laptop" class="big-laptop anchor-scroll">
               <i class="fa fa-chevron-down" id="chev1"></i><i class="fa fa-chevron-down" id="chev2"></i>
             </a>
           </span="white-circle">
@@ -51,8 +51,8 @@
       </div>
       <div class="col-1 sm-hide"></div>
 
-      <img class="red-icon" id="icon6" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" />
-      <img class="red-icon" id="icon7" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" />
+      <img class="red-icon" id="icon6" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" data-aos="fade-down" data-aos-duration="3000" />
+      <img class="red-icon" id="icon7" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" data-aos="fade-down" data-aos-duration="2500" />
     </div>
   </section>
 <?php endif; ?>
