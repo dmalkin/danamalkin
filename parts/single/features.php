@@ -18,7 +18,7 @@
   <section class="container single-page__features">
     <h1 class="text-center features-title">Features</h1>
     <div class="row">
-      <div class="sm-block-grid-1 block-grid-3">
+      <div class="sm-block-grid-1 md-block-grid-2 block-grid-3">
         <?php while(have_rows('features')) : the_row();
 
           // variables
@@ -29,7 +29,7 @@
           $description = get_sub_field('description');
 
         ?>
-          <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="600" class="col stretch text-center">
+          <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="600" class="col stretch text-center margin-bottom">
             <div class="feature-col">
               <h2 class="feature-number">
                 <?php echo $number; ?>

@@ -51,8 +51,9 @@
       </div>
       <div class="col-1 sm-hide"></div>
 
-      <img class="red-icon" id="icon6" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" data-aos="fade-down" data-aos-duration="3000" />
-      <img class="red-icon" id="icon7" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" data-aos="fade-down" data-aos-duration="2500" />
+      <img class="red-icon" id="icon6" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" data-aos-delay="0" data-aos="fade-down" data-aos-duration="2000" />
+      <img class="red-icon" id="icon13" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" data-aos-delay="0" data-aos="fade-down" data-aos-duration="1500" />
+      <img class="red-icon" id="icon7" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" data-aos-delay="0" data-aos="fade-down" data-aos-duration="1500" />
     </div>
   </section>
 <?php endif; ?>

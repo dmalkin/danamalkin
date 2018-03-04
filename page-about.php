@@ -15,13 +15,13 @@
 
       <section class="container animsition" data-animsition-in-class="fade-in-right-lg" data-animsition-in-duration="600" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="400">
         <div class="row row--justify-content-center about-page">
-          <div class="col-4">
+          <div class="col-4 sm-col-10 sm-col-centered">
             <div data-aos="slide-left" data-aos-duration="600">
               <?php the_post_thumbnail('bio'); ?>
             </div>
             <img class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" data-aos="fade-left" data-aos-duration="600"/>
           </div>
-          <div class="col-6 offset-1" data-aos="fade-right" data-aos-duration="1400">
+          <div class="col-6 offset-1 sm-col-10 sm-col-centered about-page__text" data-aos="fade-right" data-aos-duration="1400">
             <?php the_content(); ?>
           </div>
 

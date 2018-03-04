@@ -105,3 +105,20 @@
     z-index: -2;
   }
 }
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  .work-page {
+    ol {
+      .active {
+        font-size: rem(36);
+        line-height: rem(42);
+      }
+    }
+
+    .white-lines , .text-hover {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+}

@@ -34,3 +34,18 @@
     z-index: -2;
   }
 }
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  .about-page {
+    &__text {
+      margin: rem(25) 0 rem(70);
+    }
+
+    #icon1 {
+      opacity: 1;
+      bottom: rem(-140);
+      left: 80vw;
+    }
+  }
+}

@@ -54,8 +54,10 @@
 
   <div class="nifty-panel">
     <div class="container">
-      <div class="row">
+      <div class="row row--justify-content-end">
         <?php wp_nav_menu(array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'mobile-nav')); ?>
+        <img data-tilt class="red-icon" id="icon1" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" />
+        <img data-tilt class="red-icon" id="icon2" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-sm.svg" />
       </div>
     </div>
   </div>

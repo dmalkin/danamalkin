@@ -8,3 +8,13 @@
   text-align: right;
   opacity: 0.5;
 }
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  footer {
+    position: fixed !important;
+    bottom: 0;
+    padding-top: rem(15);
+    background-color: $dark;
+  }
+}
