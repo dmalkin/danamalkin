@@ -19,7 +19,7 @@
           <?php endwhile; ?>
           </ol>
         </div>
-        <div class="col-6 offset-1">
+        <div class="col-6 offset-1" data-aos="fade-right" data-aos-delay="400">
           <?php while ( have_posts() ) : the_post();
             // Variables
             $id = get_the_ID();

@@ -3768,6 +3768,11 @@ jQuery( document ).ready(function( $ ) {
 	// Nifty Nav
   $('#nifty-nav-toggle').niftyNav();
 
+	// Tilt JS
+	$('.js-tilt').tilt({
+    maxTilt: 10,
+})
+
 	// Smooth Anchor Link Scrolling
 	$('.anchor-scroll').on('click', function(e) {
 		e.preventDefault();
