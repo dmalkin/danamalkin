@@ -17,7 +17,9 @@
         <div class="row row--justify-content-center about-page">
           <div class="col-4 sm-col-10 sm-col-centered">
             <div data-aos="slide-left" data-aos-duration="600">
-              <?php the_post_thumbnail('bio'); ?>
+              <div class="about-page__img">
+                <?php the_post_thumbnail('bio'); ?>
+              </div>
             </div>
             <img class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" data-aos="fade-left" data-aos-duration="600"/>
           </div>
