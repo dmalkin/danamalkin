@@ -2,9 +2,13 @@
   Work
 ----------------------------------------------------------------------------*/
 .work-page {
-  height: calc(100vh - 122px);
+  height: calc(100vh - 125px);
   align-items: center;
   transform-style: preserve-3d;
+
+  .work-image-container {
+    z-index: -1;
+  }
 
   .text-hover {
     margin: auto;
@@ -68,9 +72,11 @@
       padding: rem(10);
       opacity: 0.7;
       z-index: 2;
+      transition: all 0.3s ease;
 
       &:hover {
         cursor: pointer;
+        font-size: rem(28);
       }
     }
 
@@ -79,6 +85,10 @@
       opacity: 1;
       font-size: rem(46);
       transition: font-size 0.5s ease;
+
+      &:hover {
+        font-size: rem(46);
+      }
     }
   }
 
