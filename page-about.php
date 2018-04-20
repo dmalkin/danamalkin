@@ -14,7 +14,7 @@
     ?>
 
       <section class="container animsition" data-animsition-in-class="fade-in-right-lg" data-animsition-in-duration="600" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="400">
-        <div class="row row--justify-content-center about-page">
+        <div class="row row--justify-content-center row--align-content-center about-page">
           <div class="col-4 sm-col-10 sm-col-centered">
             <div data-aos="slide-left" data-aos-duration="600">
               <div class="about-page__img">

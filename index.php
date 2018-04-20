@@ -7,7 +7,7 @@
   if ( have_posts() ) : ?>
 
     <section class="container animsition" data-animsition-in-class="fade-in-right-lg" data-animsition-in-duration="400" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="400">
-      <div class="row row--justify-content-center work-page">
+      <div class="row row--justify-content-center row--align-content-center work-page">
         <div class="col-4 sm-col-12">
           <ol data-aos="zoom-in-left" data-aos-duration="1200">
           <?php $num = 400; ?>

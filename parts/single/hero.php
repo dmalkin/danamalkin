@@ -17,7 +17,7 @@
 ?>
 
 <section class="container">
-  <div class="row single-page__hero">
+  <div class="row row--align-content-center single-page__hero">
     <div class="col-7 md-col-10 offset-4">
       <div class="single-page__hero-image" style="background:url(<?php echo $url; ?>) center center/cover no-repeat" data-aos="slide-down" data-aos-duration="500"></div>
       <img class="red-icon" id="icon5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" data-aos="fade-in"/>
