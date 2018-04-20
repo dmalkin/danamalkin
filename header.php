@@ -25,6 +25,7 @@
   <?php if ( is_singular() && comments_open() ) wp_enqueue_script( 'comment-reply' ); ?>
 
   <?php wp_head(); ?>
+  
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57476026-4"></script>
